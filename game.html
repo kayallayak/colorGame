@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GAMING</title>
+        <link rel="stylesheet" href="./game.css">
+        <style>
+            .multicolortext {
+                background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+                -webkit-background-clip: text;
+                -moz-background-clip: text;
+                background-clip: text;
+                color: transparent;
+            }
+        </style>
+    </head>
+    <body class="back">
+        <marquee direction="up">
+            <h1 class="headContent">
+                <span class="multicolortext">COLOR GUESSING GAME</span>
+            </h1>
+        </marquee>
+        <div >
+            <button id="start" onclick="startGame()" class="button ">START PLAY</button>
+            <div id="color1" class="colorText color1"></div>
+            <div id="color2" class="colorText color2"></div>
+        </div>
+        <div class="bottom">
+            <div class="row">
+                <div id="Blue" class="color blue"></div>
+                <div id="Red" class="color red"></div>
+            </div>
+            <div class="row">
+                <div id="Green" class="color green"></div>
+                <div id="Yellow" class="color yellow"></div>
+            </div>
+        </div>
+        <span id="correct" class="time"></span>
+        <span id="time" class="time"></span>
+    </body>
+    <script src="game.js"></script>
+</html>
